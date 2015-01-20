@@ -1,0 +1,2 @@
+# TouchEventDemo
+这里做的是一个touch事件验证的demo,同时也是类似微信的点击某个表情时候的会展示该表情的popwindow的雏形,等有空在补全
