@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecebf1"
+    android:orientation="vertical" >
+
+    <com.example.toucheventdemo.view.FaceDetailMyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/rlContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#333333" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:text="welcome to touchEvent demo"/>
+            </RelativeLayout>
+
+            <com.example.toucheventdemo.view.MyGridView
+                android:id="@+id/mgvGridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rlTop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:columnWidth="90dp"
+                android:fadingEdge="none"
+                android:gravity="center"
+                android:horizontalSpacing="30dp"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:overScrollMode="never"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="20dp" />
+            
+            
+            <RelativeLayout
+                android:id="@+id/rlBottom"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/mgvGridView"
+                android:background="#333333" >
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    android:text="welcome to touchEvent demo"/>
+            </RelativeLayout>
+            
+        </RelativeLayout>
+    </com.example.toucheventdemo.view.FaceDetailMyScrollView>
+
+</RelativeLayout>
